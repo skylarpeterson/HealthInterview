@@ -74,6 +74,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5395E0A82485C82E0074A4CB /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				5395E0A62485C1F20074A4CB /* TrackDelegate.swift */,
+				B31AA1EC24734EC7007708F4 /* TrackWaterViewController.swift */,
+				5395E0AB2485C8970074A4CB /* Views */,
+			);
+			path = Track;
+			sourceTree = "<group>";
+		};
+		5395E0A92485C8460074A4CB /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				53C4866D2485B9AF00D22524 /* VerticalButton.swift */,
+				53C4866524858F9000D22524 /* WaterLoggingWidgetView.swift */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		5395E0AA2485C86F0074A4CB /* Visualize */ = {
+			isa = PBXGroup;
+			children = (
+				B31AA1EE24734EE8007708F4 /* VisualizeWaterIntakeViewController.swift */,
+			);
+			path = Visualize;
+			sourceTree = "<group>";
+		};
+		5395E0AB2485C8970074A4CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53C4866724858FFD00D22524 /* TrackCustomInputView.swift */,
+				53C4866924859D2700D22524 /* TrackQuickAddView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B31AA1BB24734EAA007708F4 = {
 			isa = PBXGroup;
 			children = (
@@ -95,21 +131,17 @@
 		B31AA1C624734EAB007708F4 /* WaterLogging */ = {
 			isa = PBXGroup;
 			children = (
-				53C4866524858F9000D22524 /* WaterLoggingWidgetView.swift */,
-				53C4866724858FFD00D22524 /* TrackCustomInputView.swift */,
-				53C4866924859D2700D22524 /* TrackQuickAddView.swift */,
-				53C4866D2485B9AF00D22524 /* VerticalButton.swift */,
 				B31AA1C724734EAB007708F4 /* AppDelegate.swift */,
 				B31AA1F024734F10007708F4 /* AppTabBarController.swift */,
-				B31AA1C924734EAB007708F4 /* SceneDelegate.swift */,
-				B31AA1EC24734EC7007708F4 /* TrackWaterViewController.swift */,
-				B31AA1EE24734EE8007708F4 /* VisualizeWaterIntakeViewController.swift */,
-				B31AA1CD24734EAB007708F4 /* Main.storyboard */,
 				B31AA1D324734EAB007708F4 /* Assets.xcassets */,
-				B31AA1D524734EAB007708F4 /* LaunchScreen.storyboard */,
+				5395E0A92485C8460074A4CB /* Custom Views */,
 				B31AA1D824734EAB007708F4 /* Info.plist */,
+				B31AA1D524734EAB007708F4 /* LaunchScreen.storyboard */,
+				B31AA1CD24734EAB007708F4 /* Main.storyboard */,
+				B31AA1C924734EAB007708F4 /* SceneDelegate.swift */,
+				5395E0A82485C82E0074A4CB /* Track */,
+				5395E0AA2485C86F0074A4CB /* Visualize */,
 				B31AA1D024734EAB007708F4 /* WaterLogging.xcdatamodeld */,
-				5395E0A62485C1F20074A4CB /* TrackDelegate.swift */,
 			);
 			path = WaterLogging;
 			sourceTree = "<group>";
