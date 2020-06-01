@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5395E0A72485C1F20074A4CB /* TrackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395E0A62485C1F20074A4CB /* TrackDelegate.swift */; };
+		53C4866624858F9000D22524 /* WaterLoggingWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4866524858F9000D22524 /* WaterLoggingWidgetView.swift */; };
+		53C4866824858FFD00D22524 /* TrackCustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4866724858FFD00D22524 /* TrackCustomInputView.swift */; };
+		53C4866A24859D2700D22524 /* TrackQuickAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4866924859D2700D22524 /* TrackQuickAddView.swift */; };
+		53C4866E2485B9AF00D22524 /* VerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4866D2485B9AF00D22524 /* VerticalButton.swift */; };
 		B31AA1C824734EAB007708F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C724734EAB007708F4 /* AppDelegate.swift */; };
 		B31AA1CA24734EAB007708F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C924734EAB007708F4 /* SceneDelegate.swift */; };
 		B31AA1CF24734EAB007708F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31AA1CD24734EAB007708F4 /* Main.storyboard */; };
@@ -30,6 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5395E0A62485C1F20074A4CB /* TrackDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDelegate.swift; sourceTree = "<group>"; };
+		53C4866524858F9000D22524 /* WaterLoggingWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterLoggingWidgetView.swift; sourceTree = "<group>"; };
+		53C4866724858FFD00D22524 /* TrackCustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCustomInputView.swift; sourceTree = "<group>"; };
+		53C4866924859D2700D22524 /* TrackQuickAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackQuickAddView.swift; sourceTree = "<group>"; };
+		53C4866D2485B9AF00D22524 /* VerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalButton.swift; sourceTree = "<group>"; };
 		B31AA1C424734EAB007708F4 /* WaterLogging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterLogging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31AA1C724734EAB007708F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B31AA1C924734EAB007708F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +95,10 @@
 		B31AA1C624734EAB007708F4 /* WaterLogging */ = {
 			isa = PBXGroup;
 			children = (
+				53C4866524858F9000D22524 /* WaterLoggingWidgetView.swift */,
+				53C4866724858FFD00D22524 /* TrackCustomInputView.swift */,
+				53C4866924859D2700D22524 /* TrackQuickAddView.swift */,
+				53C4866D2485B9AF00D22524 /* VerticalButton.swift */,
 				B31AA1C724734EAB007708F4 /* AppDelegate.swift */,
 				B31AA1F024734F10007708F4 /* AppTabBarController.swift */,
 				B31AA1C924734EAB007708F4 /* SceneDelegate.swift */,
@@ -95,6 +109,7 @@
 				B31AA1D524734EAB007708F4 /* LaunchScreen.storyboard */,
 				B31AA1D824734EAB007708F4 /* Info.plist */,
 				B31AA1D024734EAB007708F4 /* WaterLogging.xcdatamodeld */,
+				5395E0A62485C1F20074A4CB /* TrackDelegate.swift */,
 			);
 			path = WaterLogging;
 			sourceTree = "<group>";
@@ -209,10 +224,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C4866824858FFD00D22524 /* TrackCustomInputView.swift in Sources */,
 				B31AA1ED24734EC7007708F4 /* TrackWaterViewController.swift in Sources */,
+				5395E0A72485C1F20074A4CB /* TrackDelegate.swift in Sources */,
 				B31AA1EF24734EE8007708F4 /* VisualizeWaterIntakeViewController.swift in Sources */,
+				53C4866E2485B9AF00D22524 /* VerticalButton.swift in Sources */,
+				53C4866624858F9000D22524 /* WaterLoggingWidgetView.swift in Sources */,
 				B31AA1F124734F10007708F4 /* AppTabBarController.swift in Sources */,
 				B31AA1C824734EAB007708F4 /* AppDelegate.swift in Sources */,
+				53C4866A24859D2700D22524 /* TrackQuickAddView.swift in Sources */,
 				B31AA1CA24734EAB007708F4 /* SceneDelegate.swift in Sources */,
 				B31AA1D224734EAB007708F4 /* WaterLogging.xcdatamodeld in Sources */,
 			);
@@ -375,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6MK92Q834;
 				INFOPLIST_FILE = WaterLogging/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6MK92Q834;
 				INFOPLIST_FILE = WaterLogging/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
