@@ -6,6 +6,7 @@
 //  Copyright © 2020 Apple. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import CoreData
 
@@ -21,11 +22,19 @@ class DataManager {
     return intake!
   }()
 
+  func intakeGoal() -> Int {
+    return UserDefaults.standard.integer(forKey: "IntakeGoalKey")
+  }
+
+  func setIntakeGoal(goal: Int) {
+    UserDefaults.standard.set(goal, forKey: "IntakeGoalKey")
+  }
+
   func addEntry(forDate date: Date) -> WaterIntake {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let managedContext = appDelegate.persistentContainer.viewContext
 
-    let intake = WaterIntake(amountConsumed: 0, date: date, goal: 24, insertIntoManagedObjectContext: managedContext)
+    let intake = WaterIntake(amountConsumed: 0, date: date, goal: Int64(intakeGoal()), insertIntoManagedObjectContext: managedContext)
     do {
       try managedContext.save()
     } catch {
