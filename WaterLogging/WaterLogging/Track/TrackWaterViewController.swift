@@ -51,6 +51,14 @@ class TrackWaterViewController: UIViewController, TrackDelegate {
   // MARK: - TrackDelegate
 
   func addWater(amount: Int) {
+    let today = DataManager.shared.todayIntake
+    today.amountConsumed = today.amountConsumed + Int64(amount)
+    do {
+      try today.managedObjectContext?.save()
+    } catch {
+      print("Error saving amount consumed change for \(today)")
+    }
+
     let ounce = (amount == 1) ? "ounce" : "ounces"
     let message = "Added \(amount) \(ounce) of water toward your daily goal"
     showMessage(title: "Success!", message: message)

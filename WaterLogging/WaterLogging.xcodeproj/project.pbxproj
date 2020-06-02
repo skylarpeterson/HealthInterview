@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5395E0A72485C1F20074A4CB /* TrackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395E0A62485C1F20074A4CB /* TrackDelegate.swift */; };
+		5395E0AD2485CB330074A4CB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395E0AC2485CB330074A4CB /* DataManager.swift */; };
+		53B5146E2485FE5C00A86BAE /* WaterIntake+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5146C2485FE5C00A86BAE /* WaterIntake+CoreDataClass.swift */; };
+		53B5146F2485FE5C00A86BAE /* WaterIntake+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5146D2485FE5C00A86BAE /* WaterIntake+CoreDataProperties.swift */; };
 		53C4866624858F9000D22524 /* WaterLoggingWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4866524858F9000D22524 /* WaterLoggingWidgetView.swift */; };
 		53C4866824858FFD00D22524 /* TrackCustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4866724858FFD00D22524 /* TrackCustomInputView.swift */; };
 		53C4866A24859D2700D22524 /* TrackQuickAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4866924859D2700D22524 /* TrackQuickAddView.swift */; };
@@ -36,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		5395E0A62485C1F20074A4CB /* TrackDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDelegate.swift; sourceTree = "<group>"; };
+		5395E0AC2485CB330074A4CB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		53B5146C2485FE5C00A86BAE /* WaterIntake+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterIntake+CoreDataClass.swift"; sourceTree = "<group>"; };
+		53B5146D2485FE5C00A86BAE /* WaterIntake+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterIntake+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		53C4866524858F9000D22524 /* WaterLoggingWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterLoggingWidgetView.swift; sourceTree = "<group>"; };
 		53C4866724858FFD00D22524 /* TrackCustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCustomInputView.swift; sourceTree = "<group>"; };
 		53C4866924859D2700D22524 /* TrackQuickAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackQuickAddView.swift; sourceTree = "<group>"; };
@@ -74,6 +80,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		533B1BE52485FD89003EF235 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5395E0AC2485CB330074A4CB /* DataManager.swift */,
+				53B5146C2485FE5C00A86BAE /* WaterIntake+CoreDataClass.swift */,
+				53B5146D2485FE5C00A86BAE /* WaterIntake+CoreDataProperties.swift */,
+				B31AA1D024734EAB007708F4 /* WaterLogging.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5395E0A82485C82E0074A4CB /* Track */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,7 +158,7 @@
 				B31AA1C924734EAB007708F4 /* SceneDelegate.swift */,
 				5395E0A82485C82E0074A4CB /* Track */,
 				5395E0AA2485C86F0074A4CB /* Visualize */,
-				B31AA1D024734EAB007708F4 /* WaterLogging.xcdatamodeld */,
+				533B1BE52485FD89003EF235 /* Model */,
 			);
 			path = WaterLogging;
 			sourceTree = "<group>";
@@ -257,8 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				53C4866824858FFD00D22524 /* TrackCustomInputView.swift in Sources */,
+				5395E0AD2485CB330074A4CB /* DataManager.swift in Sources */,
 				B31AA1ED24734EC7007708F4 /* TrackWaterViewController.swift in Sources */,
+				53B5146E2485FE5C00A86BAE /* WaterIntake+CoreDataClass.swift in Sources */,
 				5395E0A72485C1F20074A4CB /* TrackDelegate.swift in Sources */,
+				53B5146F2485FE5C00A86BAE /* WaterIntake+CoreDataProperties.swift in Sources */,
 				B31AA1EF24734EE8007708F4 /* VisualizeWaterIntakeViewController.swift in Sources */,
 				53C4866E2485B9AF00D22524 /* VerticalButton.swift in Sources */,
 				53C4866624858F9000D22524 /* WaterLoggingWidgetView.swift in Sources */,
