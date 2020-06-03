@@ -15,6 +15,8 @@
 		53C4866824858FFD00D22524 /* TrackCustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4866724858FFD00D22524 /* TrackCustomInputView.swift */; };
 		53C4866A24859D2700D22524 /* TrackQuickAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4866924859D2700D22524 /* TrackQuickAddView.swift */; };
 		53C4866E2485B9AF00D22524 /* VerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C4866D2485B9AF00D22524 /* VerticalButton.swift */; };
+		77E4D53D63E3FEAEE59F8DA3 /* Pods_WaterLoggingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CFCEDA6B6794CE236351479 /* Pods_WaterLoggingTests.framework */; };
+		8D52ABE24E9068A17F36D860 /* Pods_WaterLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AA5D4CF53C11CDDDE79A2D /* Pods_WaterLogging.framework */; };
 		B31AA1C824734EAB007708F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C724734EAB007708F4 /* AppDelegate.swift */; };
 		B31AA1CA24734EAB007708F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C924734EAB007708F4 /* SceneDelegate.swift */; };
 		B31AA1CF24734EAB007708F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31AA1CD24734EAB007708F4 /* Main.storyboard */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F5523378B054CEBF74D3301 /* Pods-WaterLoggingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterLoggingTests.debug.xcconfig"; path = "Target Support Files/Pods-WaterLoggingTests/Pods-WaterLoggingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		21785C2EB81D6FCD29EFDC1C /* Pods-WaterLogging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterLogging.release.xcconfig"; path = "Target Support Files/Pods-WaterLogging/Pods-WaterLogging.release.xcconfig"; sourceTree = "<group>"; };
+		5129D42844EA6AF4E1661E32 /* Pods-WaterLoggingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterLoggingTests.release.xcconfig"; path = "Target Support Files/Pods-WaterLoggingTests/Pods-WaterLoggingTests.release.xcconfig"; sourceTree = "<group>"; };
 		5395E0A62485C1F20074A4CB /* TrackDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDelegate.swift; sourceTree = "<group>"; };
 		5395E0AC2485CB330074A4CB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		53B5146C2485FE5C00A86BAE /* WaterIntake+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterIntake+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -46,6 +51,7 @@
 		53C4866724858FFD00D22524 /* TrackCustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCustomInputView.swift; sourceTree = "<group>"; };
 		53C4866924859D2700D22524 /* TrackQuickAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackQuickAddView.swift; sourceTree = "<group>"; };
 		53C4866D2485B9AF00D22524 /* VerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalButton.swift; sourceTree = "<group>"; };
+		8CFCEDA6B6794CE236351479 /* Pods_WaterLoggingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterLoggingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31AA1C424734EAB007708F4 /* WaterLogging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterLogging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31AA1C724734EAB007708F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B31AA1C924734EAB007708F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +66,8 @@
 		B31AA1EC24734EC7007708F4 /* TrackWaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackWaterViewController.swift; sourceTree = "<group>"; };
 		B31AA1EE24734EE8007708F4 /* VisualizeWaterIntakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizeWaterIntakeViewController.swift; sourceTree = "<group>"; };
 		B31AA1F024734F10007708F4 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
+		C4AA5D4CF53C11CDDDE79A2D /* Pods_WaterLogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterLogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD8A304DE2201F20DF79CA43 /* Pods-WaterLogging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterLogging.debug.xcconfig"; path = "Target Support Files/Pods-WaterLogging/Pods-WaterLogging.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D52ABE24E9068A17F36D860 /* Pods_WaterLogging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +83,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E4D53D63E3FEAEE59F8DA3 /* Pods_WaterLoggingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1303592846687FA7AD9A767B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD8A304DE2201F20DF79CA43 /* Pods-WaterLogging.debug.xcconfig */,
+				21785C2EB81D6FCD29EFDC1C /* Pods-WaterLogging.release.xcconfig */,
+				0F5523378B054CEBF74D3301 /* Pods-WaterLoggingTests.debug.xcconfig */,
+				5129D42844EA6AF4E1661E32 /* Pods-WaterLoggingTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1B19666FA05A06BC5E2C2858 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4AA5D4CF53C11CDDDE79A2D /* Pods_WaterLogging.framework */,
+				8CFCEDA6B6794CE236351479 /* Pods_WaterLoggingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		533B1BE52485FD89003EF235 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +164,8 @@
 				B31AA1C624734EAB007708F4 /* WaterLogging */,
 				B31AA1E024734EAC007708F4 /* WaterLoggingTests */,
 				B31AA1C524734EAB007708F4 /* Products */,
+				1303592846687FA7AD9A767B /* Pods */,
+				1B19666FA05A06BC5E2C2858 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B31AA1E624734EAC007708F4 /* Build configuration list for PBXNativeTarget "WaterLogging" */;
 			buildPhases = (
+				34E7AE6FA2638734CAF90EBD /* [CP] Check Pods Manifest.lock */,
 				B31AA1C024734EAB007708F4 /* Sources */,
 				B31AA1C124734EAB007708F4 /* Frameworks */,
 				B31AA1C224734EAB007708F4 /* Resources */,
+				F0EBBFBA3CFFBC600E8FC2D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +231,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B31AA1E924734EAC007708F4 /* Build configuration list for PBXNativeTarget "WaterLoggingTests" */;
 			buildPhases = (
+				708B66BAC2696B36F7158D00 /* [CP] Check Pods Manifest.lock */,
 				B31AA1D924734EAC007708F4 /* Sources */,
 				B31AA1DA24734EAC007708F4 /* Frameworks */,
 				B31AA1DB24734EAC007708F4 /* Resources */,
@@ -267,6 +303,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34E7AE6FA2638734CAF90EBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaterLogging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		708B66BAC2696B36F7158D00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaterLoggingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0EBBFBA3CFFBC600E8FC2D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaterLogging/Pods-WaterLogging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaterLogging/Pods-WaterLogging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaterLogging/Pods-WaterLogging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B31AA1C024734EAB007708F4 /* Sources */ = {
@@ -444,6 +544,7 @@
 		};
 		B31AA1E724734EAC007708F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD8A304DE2201F20DF79CA43 /* Pods-WaterLogging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +563,7 @@
 		};
 		B31AA1E824734EAC007708F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21785C2EB81D6FCD29EFDC1C /* Pods-WaterLogging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,6 +582,7 @@
 		};
 		B31AA1EA24734EAC007708F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F5523378B054CEBF74D3301 /* Pods-WaterLoggingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -501,6 +604,7 @@
 		};
 		B31AA1EB24734EAC007708F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5129D42844EA6AF4E1661E32 /* Pods-WaterLoggingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

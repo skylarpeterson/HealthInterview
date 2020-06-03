@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00171A8539DE71383C85AE6AA74F6194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		14CD2C142A04217A4E5042D319BD6964 /* MKRingProgressView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFBC20C276DCC195E5949A3D60F70B1 /* MKRingProgressView-dummy.m */; };
+		1B8E8B9C5DF4EA2B34491E37B817036B /* Pods-WaterLogging-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB9CDEF5A5D7AE17596293ADE1A96DE /* Pods-WaterLogging-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9884CF574AE7B43078F360F4B0AD5E1D /* Pods-WaterLoggingTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A211618663917C8DD56BDECE6C450261 /* Pods-WaterLoggingTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		991A8E9AD5B9537255249B8D55F39EE4 /* Pods-WaterLoggingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F468E7DB02D469653B2DC85A99EE3F /* Pods-WaterLoggingTests-dummy.m */; };
+		9C4BD92CAC865148E964E77A8A3223DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		A66834820288F352D28E4E7E4E5CD488 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		A811D66B6A07AB8F23E7D73534A1A634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		D1E24E27F1527380B47B4EA90E0A45B7 /* MKGradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8B358D6F2BC1E2356719E1E54A8C5 /* MKGradientGenerator.swift */; };
+		E5BD6B3AD2F98BCBAE36D4517F15A651 /* MKRingProgressLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A33127C8A891EBE04191882E97F5BF5 /* MKRingProgressLayer.swift */; };
+		ECEE5A8B2327749E46741EE35FE74E29 /* MKRingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF0EBF8F2C94AD69E59B828E745AAD /* MKRingProgressView.swift */; };
+		F52449380EF7F9A190A1A5C9ECD3A968 /* MKRingProgressView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 749401206AE67F74506F7EA0E49C8DE7 /* MKRingProgressView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7F1CF2048061F6C55B8221DF2C26D00 /* Pods-WaterLogging-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D4B3F232F6A935F7DDBD3A1A467F4F /* Pods-WaterLogging-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02B0083A06E41D5934AD8657D9DE01D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2E0DCAF57F0557122CDAEBC19933B4C;
+			remoteInfo = "Pods-WaterLogging";
+		};
+		8DDAD9B889817A5B5077E8113191C3F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72C70A12E17485B41B7A7C5DA5AA071C;
+			remoteInfo = MKRingProgressView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BDAA71FE3F4BB4FA81A98D232686F1B /* Pods-WaterLogging-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WaterLogging-frameworks.sh"; sourceTree = "<group>"; };
+		1490FDFB748F7081F9BD37CC56D5ED27 /* Pods-WaterLoggingTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WaterLoggingTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1AB9CDEF5A5D7AE17596293ADE1A96DE /* Pods-WaterLogging-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WaterLogging-umbrella.h"; sourceTree = "<group>"; };
+		201C76DA0CC1F47F12BA491B85AEB6C1 /* Pods-WaterLoggingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterLoggingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		204568D3220474AE405B5A11CE170273 /* Pods-WaterLogging-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WaterLogging-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2466CF6658F722078CA3F4E95448D09E /* Pods_WaterLogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WaterLogging.framework; path = "Pods-WaterLogging.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3D786A21699E56AA62BE9F2F265AE463 /* Pods-WaterLoggingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterLoggingTests.release.xcconfig"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4743DF61B0CF22E246DFA99D87016A4A /* Pods-WaterLogging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterLogging.debug.xcconfig"; sourceTree = "<group>"; };
+		47A8C46941408763607B67BC6EA03538 /* Pods-WaterLogging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WaterLogging.release.xcconfig"; sourceTree = "<group>"; };
+		4DEF0EBF8F2C94AD69E59B828E745AAD /* MKRingProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRingProgressView.swift; path = MKRingProgressView/MKRingProgressView.swift; sourceTree = "<group>"; };
+		4F6C9CB0C13040A3FB1995CE61CF8D85 /* MKRingProgressView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MKRingProgressView.modulemap; sourceTree = "<group>"; };
+		52B94C35E45A96413B51028C0841A4E5 /* MKRingProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKRingProgressView-prefix.pch"; sourceTree = "<group>"; };
+		53F468E7DB02D469653B2DC85A99EE3F /* Pods-WaterLoggingTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WaterLoggingTests-dummy.m"; sourceTree = "<group>"; };
+		5A33127C8A891EBE04191882E97F5BF5 /* MKRingProgressLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRingProgressLayer.swift; path = MKRingProgressView/MKRingProgressLayer.swift; sourceTree = "<group>"; };
+		621CF65DB1641E96E483C08B9CCF2852 /* MKRingProgressView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKRingProgressView.release.xcconfig; sourceTree = "<group>"; };
+		749401206AE67F74506F7EA0E49C8DE7 /* MKRingProgressView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKRingProgressView-umbrella.h"; sourceTree = "<group>"; };
+		86D4B3F232F6A935F7DDBD3A1A467F4F /* Pods-WaterLogging-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WaterLogging-dummy.m"; sourceTree = "<group>"; };
+		97438E128DCB04801B735321DA1ECEFB /* Pods-WaterLoggingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterLoggingTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9C607C6F8607B374BD095985C06824B8 /* Pods-WaterLogging-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterLogging-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DB8B358D6F2BC1E2356719E1E54A8C5 /* MKGradientGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKGradientGenerator.swift; path = MKRingProgressView/MKGradientGenerator.swift; sourceTree = "<group>"; };
+		A211618663917C8DD56BDECE6C450261 /* Pods-WaterLoggingTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WaterLoggingTests-umbrella.h"; sourceTree = "<group>"; };
+		B33AE794CEDCC1E01C84CBFED368237E /* MKRingProgressView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MKRingProgressView-Info.plist"; sourceTree = "<group>"; };
+		CFEEE68523826CF44C37E422C788BA92 /* Pods-WaterLogging-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterLogging-acknowledgements.plist"; sourceTree = "<group>"; };
+		D820246401E9A9127A4D00A5C83EC67E /* Pods-WaterLogging.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WaterLogging.modulemap"; sourceTree = "<group>"; };
+		DFFF396A7283A65507AFF68552B0BAE7 /* MKRingProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKRingProgressView.framework; path = MKRingProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19251AE6644E0284067BFE8CAA22607 /* Pods_WaterLoggingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WaterLoggingTests.framework; path = "Pods-WaterLoggingTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34A35921E78FDEACA4C5BB27C3C3457 /* Pods-WaterLoggingTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WaterLoggingTests.modulemap"; sourceTree = "<group>"; };
+		F2684111F6756D150DDA8B1AC26FB6FA /* MKRingProgressView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKRingProgressView.debug.xcconfig; sourceTree = "<group>"; };
+		F3FDE2A5627F3422C8C50363D4F23C21 /* Pods-WaterLoggingTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WaterLoggingTests-Info.plist"; sourceTree = "<group>"; };
+		FEFBC20C276DCC195E5949A3D60F70B1 /* MKRingProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKRingProgressView-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F656525EAA819BA1A435FFC074497D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A811D66B6A07AB8F23E7D73534A1A634 /* Foundation.framework in Frameworks */,
+				A66834820288F352D28E4E7E4E5CD488 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8122AFFE165583F7E08E33CE67B46E45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00171A8539DE71383C85AE6AA74F6194 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9273268F30B71E374F49D556BA1A624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4BD92CAC865148E964E77A8A3223DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BE034B7665B5CF4678C47D7933B8F78 /* Pods-WaterLoggingTests */ = {
+			isa = PBXGroup;
+			children = (
+				E34A35921E78FDEACA4C5BB27C3C3457 /* Pods-WaterLoggingTests.modulemap */,
+				1490FDFB748F7081F9BD37CC56D5ED27 /* Pods-WaterLoggingTests-acknowledgements.markdown */,
+				97438E128DCB04801B735321DA1ECEFB /* Pods-WaterLoggingTests-acknowledgements.plist */,
+				53F468E7DB02D469653B2DC85A99EE3F /* Pods-WaterLoggingTests-dummy.m */,
+				F3FDE2A5627F3422C8C50363D4F23C21 /* Pods-WaterLoggingTests-Info.plist */,
+				A211618663917C8DD56BDECE6C450261 /* Pods-WaterLoggingTests-umbrella.h */,
+				201C76DA0CC1F47F12BA491B85AEB6C1 /* Pods-WaterLoggingTests.debug.xcconfig */,
+				3D786A21699E56AA62BE9F2F265AE463 /* Pods-WaterLoggingTests.release.xcconfig */,
+			);
+			name = "Pods-WaterLoggingTests";
+			path = "Target Support Files/Pods-WaterLoggingTests";
+			sourceTree = "<group>";
+		};
+		2C7D6323951FB99E1FF3B7C0B718718C /* MKRingProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				9DB8B358D6F2BC1E2356719E1E54A8C5 /* MKGradientGenerator.swift */,
+				5A33127C8A891EBE04191882E97F5BF5 /* MKRingProgressLayer.swift */,
+				4DEF0EBF8F2C94AD69E59B828E745AAD /* MKRingProgressView.swift */,
+				DF7533F817A29EFE63BAE44A846F500B /* Support Files */,
+			);
+			name = MKRingProgressView;
+			path = MKRingProgressView;
+			sourceTree = "<group>";
+		};
+		331E29CDD26F0EC545BA0E16A5CEEA7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C7D6323951FB99E1FF3B7C0B718718C /* MKRingProgressView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		33495387E34F8EA33ADC066643BC429F /* Pods-WaterLogging */ = {
+			isa = PBXGroup;
+			children = (
+				D820246401E9A9127A4D00A5C83EC67E /* Pods-WaterLogging.modulemap */,
+				204568D3220474AE405B5A11CE170273 /* Pods-WaterLogging-acknowledgements.markdown */,
+				CFEEE68523826CF44C37E422C788BA92 /* Pods-WaterLogging-acknowledgements.plist */,
+				86D4B3F232F6A935F7DDBD3A1A467F4F /* Pods-WaterLogging-dummy.m */,
+				0BDAA71FE3F4BB4FA81A98D232686F1B /* Pods-WaterLogging-frameworks.sh */,
+				9C607C6F8607B374BD095985C06824B8 /* Pods-WaterLogging-Info.plist */,
+				1AB9CDEF5A5D7AE17596293ADE1A96DE /* Pods-WaterLogging-umbrella.h */,
+				4743DF61B0CF22E246DFA99D87016A4A /* Pods-WaterLogging.debug.xcconfig */,
+				47A8C46941408763607B67BC6EA03538 /* Pods-WaterLogging.release.xcconfig */,
+			);
+			name = "Pods-WaterLogging";
+			path = "Target Support Files/Pods-WaterLogging";
+			sourceTree = "<group>";
+		};
+		3B8E98504807BB150C83EF1EEBB757CA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				33495387E34F8EA33ADC066643BC429F /* Pods-WaterLogging */,
+				2BE034B7665B5CF4678C47D7933B8F78 /* Pods-WaterLoggingTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		906F8A350C678FA2DB6A1FAEB6299498 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFFF396A7283A65507AFF68552B0BAE7 /* MKRingProgressView.framework */,
+				2466CF6658F722078CA3F4E95448D09E /* Pods_WaterLogging.framework */,
+				E19251AE6644E0284067BFE8CAA22607 /* Pods_WaterLoggingTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				331E29CDD26F0EC545BA0E16A5CEEA7F /* Pods */,
+				906F8A350C678FA2DB6A1FAEB6299498 /* Products */,
+				3B8E98504807BB150C83EF1EEBB757CA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DF7533F817A29EFE63BAE44A846F500B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F6C9CB0C13040A3FB1995CE61CF8D85 /* MKRingProgressView.modulemap */,
+				FEFBC20C276DCC195E5949A3D60F70B1 /* MKRingProgressView-dummy.m */,
+				B33AE794CEDCC1E01C84CBFED368237E /* MKRingProgressView-Info.plist */,
+				52B94C35E45A96413B51028C0841A4E5 /* MKRingProgressView-prefix.pch */,
+				749401206AE67F74506F7EA0E49C8DE7 /* MKRingProgressView-umbrella.h */,
+				F2684111F6756D150DDA8B1AC26FB6FA /* MKRingProgressView.debug.xcconfig */,
+				621CF65DB1641E96E483C08B9CCF2852 /* MKRingProgressView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MKRingProgressView";
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2350C4C7ED13C9F067A62A88A6A63E5F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52449380EF7F9A190A1A5C9ECD3A968 /* MKRingProgressView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0E72E057DAC0E81D1EE9C9214339BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B8E8B9C5DF4EA2B34491E37B817036B /* Pods-WaterLogging-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B32F9FB0CC3007F9575271E52EAA581 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9884CF574AE7B43078F360F4B0AD5E1D /* Pods-WaterLoggingTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		72C70A12E17485B41B7A7C5DA5AA071C /* MKRingProgressView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DBFB8870D2746E4FAB68FEC88521F73 /* Build configuration list for PBXNativeTarget "MKRingProgressView" */;
+			buildPhases = (
+				2350C4C7ED13C9F067A62A88A6A63E5F /* Headers */,
+				13C14A3254BE8E55721D69985620263B /* Sources */,
+				7F656525EAA819BA1A435FFC074497D9 /* Frameworks */,
+				B707F6653FF5F036CD2EE283560E3729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKRingProgressView;
+			productName = MKRingProgressView;
+			productReference = DFFF396A7283A65507AFF68552B0BAE7 /* MKRingProgressView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5F7F98B497FAF950B9C8E632F64F8F7 /* Pods-WaterLoggingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CD121CAE2E09898B4BC014D22AB11C /* Build configuration list for PBXNativeTarget "Pods-WaterLoggingTests" */;
+			buildPhases = (
+				8B32F9FB0CC3007F9575271E52EAA581 /* Headers */,
+				62777BA18BB8B1261FB7B643ADFA7BFB /* Sources */,
+				8122AFFE165583F7E08E33CE67B46E45 /* Frameworks */,
+				06B1C98221EBE1AE250248E9C6E910E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A9F4D79FF8542FDADD14CFA6162D2EA /* PBXTargetDependency */,
+			);
+			name = "Pods-WaterLoggingTests";
+			productName = "Pods-WaterLoggingTests";
+			productReference = E19251AE6644E0284067BFE8CAA22607 /* Pods_WaterLoggingTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2E0DCAF57F0557122CDAEBC19933B4C /* Pods-WaterLogging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EEC3F6487AA464AB0620690872198BC /* Build configuration list for PBXNativeTarget "Pods-WaterLogging" */;
+			buildPhases = (
+				4D0E72E057DAC0E81D1EE9C9214339BD /* Headers */,
+				B70C6B6C02BAD8D89B109308DEA0BEE4 /* Sources */,
+				D9273268F30B71E374F49D556BA1A624 /* Frameworks */,
+				F7EAFC233355BFBB0021EF6984B41516 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDD3808463D0F2FF018235D1C856E271 /* PBXTargetDependency */,
+			);
+			name = "Pods-WaterLogging";
+			productName = "Pods-WaterLogging";
+			productReference = 2466CF6658F722078CA3F4E95448D09E /* Pods_WaterLogging.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 906F8A350C678FA2DB6A1FAEB6299498 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72C70A12E17485B41B7A7C5DA5AA071C /* MKRingProgressView */,
+				D2E0DCAF57F0557122CDAEBC19933B4C /* Pods-WaterLogging */,
+				B5F7F98B497FAF950B9C8E632F64F8F7 /* Pods-WaterLoggingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06B1C98221EBE1AE250248E9C6E910E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B707F6653FF5F036CD2EE283560E3729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7EAFC233355BFBB0021EF6984B41516 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13C14A3254BE8E55721D69985620263B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E24E27F1527380B47B4EA90E0A45B7 /* MKGradientGenerator.swift in Sources */,
+				E5BD6B3AD2F98BCBAE36D4517F15A651 /* MKRingProgressLayer.swift in Sources */,
+				14CD2C142A04217A4E5042D319BD6964 /* MKRingProgressView-dummy.m in Sources */,
+				ECEE5A8B2327749E46741EE35FE74E29 /* MKRingProgressView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62777BA18BB8B1261FB7B643ADFA7BFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991A8E9AD5B9537255249B8D55F39EE4 /* Pods-WaterLoggingTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70C6B6C02BAD8D89B109308DEA0BEE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F1CF2048061F6C55B8221DF2C26D00 /* Pods-WaterLogging-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A9F4D79FF8542FDADD14CFA6162D2EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WaterLogging";
+			target = D2E0DCAF57F0557122CDAEBC19933B4C /* Pods-WaterLogging */;
+			targetProxy = 02B0083A06E41D5934AD8657D9DE01D6 /* PBXContainerItemProxy */;
+		};
+		EDD3808463D0F2FF018235D1C856E271 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MKRingProgressView;
+			target = 72C70A12E17485B41B7A7C5DA5AA071C /* MKRingProgressView */;
+			targetProxy = 8DDAD9B889817A5B5077E8113191C3F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D14D2A8A6A15C00F9374FB8ED70553E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D786A21699E56AA62BE9F2F265AE463 /* Pods-WaterLoggingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WaterLoggingTests/Pods-WaterLoggingTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WaterLoggingTests/Pods-WaterLoggingTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		412227156346FAD8114A42CB2DD2DE05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4743DF61B0CF22E246DFA99D87016A4A /* Pods-WaterLogging.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WaterLogging/Pods-WaterLogging-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WaterLogging/Pods-WaterLogging.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9CD7453A891A4D8D04A975604878D90E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 201C76DA0CC1F47F12BA491B85AEB6C1 /* Pods-WaterLoggingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WaterLoggingTests/Pods-WaterLoggingTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WaterLoggingTests/Pods-WaterLoggingTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B660084092A6D3221DC2ED71FC4B5728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47A8C46941408763607B67BC6EA03538 /* Pods-WaterLogging.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WaterLogging/Pods-WaterLogging-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WaterLogging/Pods-WaterLogging.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C0C2ED6B5047526CA43234E4DB0AC4A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 621CF65DB1641E96E483C08B9CCF2852 /* MKRingProgressView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MKRingProgressView/MKRingProgressView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MKRingProgressView/MKRingProgressView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MKRingProgressView/MKRingProgressView.modulemap";
+				PRODUCT_MODULE_NAME = MKRingProgressView;
+				PRODUCT_NAME = MKRingProgressView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E122B176410A0B2E7DD3906E48031341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2684111F6756D150DDA8B1AC26FB6FA /* MKRingProgressView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MKRingProgressView/MKRingProgressView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MKRingProgressView/MKRingProgressView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MKRingProgressView/MKRingProgressView.modulemap";
+				PRODUCT_MODULE_NAME = MKRingProgressView;
+				PRODUCT_NAME = MKRingProgressView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DBFB8870D2746E4FAB68FEC88521F73 /* Build configuration list for PBXNativeTarget "MKRingProgressView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E122B176410A0B2E7DD3906E48031341 /* Debug */,
+				C0C2ED6B5047526CA43234E4DB0AC4A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */,
+				7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EEC3F6487AA464AB0620690872198BC /* Build configuration list for PBXNativeTarget "Pods-WaterLogging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412227156346FAD8114A42CB2DD2DE05 /* Debug */,
+				B660084092A6D3221DC2ED71FC4B5728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CD121CAE2E09898B4BC014D22AB11C /* Build configuration list for PBXNativeTarget "Pods-WaterLoggingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD7453A891A4D8D04A975604878D90E /* Debug */,
+				0D14D2A8A6A15C00F9374FB8ED70553E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
