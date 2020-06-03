@@ -9,7 +9,8 @@ import MKRingProgressView
 
 class VisualizeWaterIntakeViewController: UIViewController {
 
-  private let ringView = RingProgressView(frame: .zero)
+  private let goalView = VisualizeGoalView(frame: .zero)
+  private let progressView = VisualizeProgressView(frame: .zero)
 
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -27,9 +28,7 @@ class VisualizeWaterIntakeViewController: UIViewController {
     let currentGoal = DataManager.shared.intakeGoal()
     let progress: Double = Double(currentIntake)/Double(currentGoal)
 
-    UIView.animate(withDuration: 0.5) {
-      self.ringView.progress = progress
-    }
+    progressView.updateProgress(progress: progress, animated: true)
   }
 
   // Set Up
@@ -38,21 +37,23 @@ class VisualizeWaterIntakeViewController: UIViewController {
     view.backgroundColor = .systemBackground
     title = "Visualize"
 
-    ringView.startColor = .systemBlue
-    ringView.endColor = .systemBlue
-    ringView.ringWidth = 40
+    goalView.translatesAutoresizingMaskIntoConstraints = false
+    view.addSubview(goalView)
+
+    progressView.translatesAutoresizingMaskIntoConstraints = false
+    view.addSubview(progressView)
 
     setUpConstraints()
   }
 
   private func setUpConstraints() {
-    ringView.translatesAutoresizingMaskIntoConstraints = false
-    view.addSubview(ringView)
+    goalView.topAnchor.constraint(equalTo: view.readableContentGuide.topAnchor, constant: 20.0).isActive = true
+    goalView.leadingAnchor.constraint(equalTo: view.readableContentGuide.leadingAnchor).isActive = true
+    goalView.trailingAnchor.constraint(equalTo: view.readableContentGuide.trailingAnchor).isActive = true
 
-    ringView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-    ringView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-    ringView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.75).isActive = true
-    ringView.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.75).isActive = true
+    progressView.topAnchor.constraint(equalTo: goalView.bottomAnchor, constant: 20.0).isActive = true
+    progressView.leadingAnchor.constraint(equalTo: goalView.leadingAnchor).isActive = true
+    progressView.trailingAnchor.constraint(equalTo: goalView.trailingAnchor).isActive = true
   }
 
 }
