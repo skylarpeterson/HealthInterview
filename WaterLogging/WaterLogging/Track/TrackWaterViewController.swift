@@ -58,6 +58,8 @@ class TrackWaterViewController: UIViewController, TrackDelegate {
       print("Error saving amount consumed change for \(today)")
     }
 
+    customInputView.updateTotal()
+
     let ounce = (amount == 1) ? "ounce" : "ounces"
     let message = "Added \(amount) \(ounce) of water toward your daily goal"
     showMessage(title: "Success!", message: message)

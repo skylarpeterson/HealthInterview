@@ -8,11 +8,17 @@
 
 import UIKit
 
+protocol GoalDelegate {
+  func promptUpdateGoal()
+}
+
 class VisualizeGoalView: WaterLoggingWidgetView {
 
   let goalLabel = UILabel()
   let goalValueLabel = UILabel()
   let updateButton = UIButton()
+
+  var delegate: GoalDelegate?
 
   override func setup() {
     super.setup()
@@ -23,7 +29,7 @@ class VisualizeGoalView: WaterLoggingWidgetView {
 
     //let today = formatter.string(from: Date())
 
-    goalLabel.text = "Current Goal"
+    goalLabel.text = "Daily Goal"
     goalLabel.font = UIFont.systemFont(ofSize: 20.0, weight: .medium)
     goalLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
     goalLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -35,6 +41,7 @@ class VisualizeGoalView: WaterLoggingWidgetView {
 
     updateButton.setTitle("Update Goal", for: .normal)
     updateButton.setTitleColor(.systemBlue, for: .normal)
+    updateButton.addTarget(self, action: #selector(updateGoalAction), for: .touchUpInside)
     updateButton.translatesAutoresizingMaskIntoConstraints = false
   }
 
@@ -68,6 +75,12 @@ class VisualizeGoalView: WaterLoggingWidgetView {
     updateButton.topAnchor.constraint(equalTo: lineView.bottomAnchor, constant: 10.0).isActive = true
     updateButton.centerXAnchor.constraint(equalTo: widgetContainerView.centerXAnchor).isActive = true
     updateButton.bottomAnchor.constraint(equalTo: widgetContainerView.bottomAnchor, constant: -10.0).isActive = true
+  }
+
+  // MARK: - Button Actions
+
+  @objc func updateGoalAction() {
+    delegate?.promptUpdateGoal()
   }
 
 }

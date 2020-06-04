@@ -36,7 +36,7 @@ class TrackCustomInputView: WaterLoggingWidgetView {
     ounceLabel.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
     ounceLabel.translatesAutoresizingMaskIntoConstraints = false
 
-    totalLabel.text = todayTotalString(forAmount: Int(DataManager.shared.todayIntake.amountConsumed))
+    updateTotal()
     totalLabel.font = UIFont.systemFont(ofSize: 17.0)
     totalLabel.textColor = .systemGray
     totalLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -116,8 +116,8 @@ class TrackCustomInputView: WaterLoggingWidgetView {
 
   // MARK: - Helpers
 
-  func todayTotalString(forAmount amount: Int) -> String {
-    return "Today's Total: \(amount) oz"
+  func updateTotal() {
+    totalLabel.text = "Today's Total: \(DataManager.shared.todayIntake.amountConsumed) oz"
   }
 
   // MARK: - Button Actions
@@ -129,7 +129,6 @@ class TrackCustomInputView: WaterLoggingWidgetView {
   @objc func addButtonAction() {
     if let amountText = amountTextField.text {
       if let amount = Int(amountText) {
-        totalLabel.text = todayTotalString(forAmount: amount)
         delegate?.addWater(amount: amount)
       } else {
         delegate?.showMessage(title: nil, message: "Enter an amount of water to add it towards your daily total.")

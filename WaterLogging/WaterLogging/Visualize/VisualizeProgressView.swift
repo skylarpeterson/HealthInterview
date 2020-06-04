@@ -24,7 +24,7 @@ class VisualizeProgressView: WaterLoggingWidgetView {
     ringView.ringWidth = 40
     ringView.translatesAutoresizingMaskIntoConstraints = false
 
-    consumedLabel.text = "\(DataManager.shared.todayIntake.amountConsumed)/\(DataManager.shared.intakeGoal()) oz"
+    consumedLabel.text = consumedText()
     consumedLabel.textAlignment = .center
     consumedLabel.font = UIFont.systemFont(ofSize: 40.0, weight: .bold)
     consumedLabel.numberOfLines = 0
@@ -49,6 +49,12 @@ class VisualizeProgressView: WaterLoggingWidgetView {
     consumedLabel.heightAnchor.constraint(equalTo: ringView.heightAnchor, multiplier: 0.6).isActive = true
   }
 
+  // MARK: - Helpers
+
+  func consumedText() -> String {
+    return "\(DataManager.shared.todayIntake.amountConsumed)/\(DataManager.shared.intakeGoal()) oz"
+  }
+
   func updateProgress(progress: Double, animated: Bool) {
     if animated {
       UIView.animate(withDuration: 0.5) {
@@ -57,6 +63,7 @@ class VisualizeProgressView: WaterLoggingWidgetView {
     } else {
       ringView.progress = progress
     }
+    self.consumedLabel.text = consumedText()
   }
 
 }
