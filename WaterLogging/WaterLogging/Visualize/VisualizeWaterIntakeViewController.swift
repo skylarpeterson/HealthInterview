@@ -47,13 +47,13 @@ class VisualizeWaterIntakeViewController: UIViewController {
   }
 
   private func setUpConstraints() {
-    goalView.topAnchor.constraint(equalTo: view.readableContentGuide.topAnchor, constant: 20.0).isActive = true
-    goalView.leadingAnchor.constraint(equalTo: view.readableContentGuide.leadingAnchor).isActive = true
-    goalView.trailingAnchor.constraint(equalTo: view.readableContentGuide.trailingAnchor).isActive = true
+    progressView.topAnchor.constraint(equalTo: view.readableContentGuide.topAnchor, constant: 20.0).isActive = true
+    progressView.leadingAnchor.constraint(equalTo: view.readableContentGuide.leadingAnchor).isActive = true
+    progressView.trailingAnchor.constraint(equalTo: view.readableContentGuide.trailingAnchor).isActive = true
 
-    progressView.topAnchor.constraint(equalTo: goalView.bottomAnchor, constant: 20.0).isActive = true
-    progressView.leadingAnchor.constraint(equalTo: goalView.leadingAnchor).isActive = true
-    progressView.trailingAnchor.constraint(equalTo: goalView.trailingAnchor).isActive = true
+    goalView.topAnchor.constraint(equalTo: progressView.bottomAnchor, constant: 20.0).isActive = true
+    goalView.leadingAnchor.constraint(equalTo: progressView.leadingAnchor).isActive = true
+    goalView.trailingAnchor.constraint(equalTo: progressView.trailingAnchor).isActive = true
   }
 
 }

@@ -12,6 +12,7 @@ class TrackCustomInputView: WaterLoggingWidgetView {
 
   private let amountTextField = UITextField()
   private let ounceLabel = UILabel()
+  private let totalLabel = UILabel()
   private let addButton = UIButton()
 
   var delegate: TrackDelegate?
@@ -34,6 +35,11 @@ class TrackCustomInputView: WaterLoggingWidgetView {
     ounceLabel.font = UIFont.systemFont(ofSize: 30.0)
     ounceLabel.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
     ounceLabel.translatesAutoresizingMaskIntoConstraints = false
+
+    totalLabel.text = todayTotalString(forAmount: Int(DataManager.shared.todayIntake.amountConsumed))
+    totalLabel.font = UIFont.systemFont(ofSize: 17.0)
+    totalLabel.textColor = .systemGray
+    totalLabel.translatesAutoresizingMaskIntoConstraints = false
 
     addButton.setTitle("Add", for: .normal)
     addButton.setTitleColor(.systemBlue, for: .normal)
@@ -58,8 +64,10 @@ class TrackCustomInputView: WaterLoggingWidgetView {
     container.leadingAnchor.constraint(equalTo: widgetContainerView.leadingAnchor).isActive = true
     container.trailingAnchor.constraint(equalTo: widgetContainerView.trailingAnchor).isActive = true
 
+    entryContainer.topAnchor.constraint(equalTo: container.topAnchor, constant: 40.0).isActive = true
+    entryContainer.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -40.0).isActive = true
     entryContainer.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
-    entryContainer.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
+    //entryContainer.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
     entryContainer.widthAnchor.constraint(lessThanOrEqualTo: container.widthAnchor, multiplier: 1.0).isActive = true
 
     amountTextField.topAnchor.constraint(equalTo: entryContainer.topAnchor).isActive = true
@@ -70,13 +78,17 @@ class TrackCustomInputView: WaterLoggingWidgetView {
     ounceLabel.leadingAnchor.constraint(equalTo: amountTextField.trailingAnchor, constant: 5.0).isActive = true
     ounceLabel.trailingAnchor.constraint(equalTo: entryContainer.trailingAnchor).isActive = true
 
+    widgetContainerView.addSubview(totalLabel)
+    totalLabel.topAnchor.constraint(equalTo: container.bottomAnchor).isActive = true
+    totalLabel.centerXAnchor.constraint(equalTo: widgetContainerView.centerXAnchor).isActive = true
+
     let lineView = UIView()
     lineView.backgroundColor = .systemGray4
     lineView.translatesAutoresizingMaskIntoConstraints = false
     widgetContainerView.addSubview(lineView)
     widgetContainerView.addSubview(addButton)
 
-    lineView.topAnchor.constraint(equalTo: container.bottomAnchor).isActive = true
+    lineView.topAnchor.constraint(equalTo: totalLabel.bottomAnchor, constant: 10.0).isActive = true
     lineView.leadingAnchor.constraint(equalTo: widgetContainerView.leadingAnchor, constant: 10.0).isActive = true
     lineView.trailingAnchor.constraint(equalTo: widgetContainerView.trailingAnchor, constant: -10.0).isActive = true
     lineView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
@@ -92,23 +104,23 @@ class TrackCustomInputView: WaterLoggingWidgetView {
     let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
     doneToolbar.barStyle = .default
 
-    let cancel: UIBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelButtonAction))
     let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
     let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneButtonAction))
 
-    let items = [cancel, flexSpace, done]
+    let items = [flexSpace, done]
     doneToolbar.items = items
     doneToolbar.sizeToFit()
 
     amountTextField.inputAccessoryView = doneToolbar
   }
 
-  // MARK: - Button Actions
+  // MARK: - Helpers
 
-  @objc func cancelButtonAction() {
-    amountTextField.text = nil
-    amountTextField.resignFirstResponder()
+  func todayTotalString(forAmount amount: Int) -> String {
+    return "Today's Total: \(amount) oz"
   }
+
+  // MARK: - Button Actions
 
   @objc func doneButtonAction() {
     amountTextField.resignFirstResponder()
@@ -117,6 +129,7 @@ class TrackCustomInputView: WaterLoggingWidgetView {
   @objc func addButtonAction() {
     if let amountText = amountTextField.text {
       if let amount = Int(amountText) {
+        totalLabel.text = todayTotalString(forAmount: amount)
         delegate?.addWater(amount: amount)
       } else {
         delegate?.showMessage(title: nil, message: "Enter an amount of water to add it towards your daily total.")

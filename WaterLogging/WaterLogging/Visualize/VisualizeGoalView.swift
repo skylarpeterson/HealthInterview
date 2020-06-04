@@ -21,12 +21,11 @@ class VisualizeGoalView: WaterLoggingWidgetView {
     formatter.dateStyle = .long
     formatter.timeStyle = .none
 
-    let today = formatter.string(from: Date())
-
-    titleLabel.text = "Today: \(today)"
+    //let today = formatter.string(from: Date())
 
     goalLabel.text = "Current Goal"
     goalLabel.font = UIFont.systemFont(ofSize: 20.0, weight: .medium)
+    goalLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
     goalLabel.translatesAutoresizingMaskIntoConstraints = false
 
     goalValueLabel.text = "\(DataManager.shared.intakeGoal()) oz"

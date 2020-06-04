@@ -45,7 +45,6 @@ class TrackWaterViewController: UIViewController, TrackDelegate {
     quickAddView.topAnchor.constraint(equalTo: customInputView.bottomAnchor, constant: 20.0).isActive = true
     quickAddView.leadingAnchor.constraint(equalTo: customInputView.leadingAnchor).isActive = true
     quickAddView.trailingAnchor.constraint(equalTo: customInputView.trailingAnchor).isActive = true
-    quickAddView.bottomAnchor.constraint(equalTo: view.readableContentGuide.bottomAnchor, constant: -20.0).isActive = true
   }
 
   // MARK: - TrackDelegate
