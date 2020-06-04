@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 import CoreData
 
+enum DataKeys: String {
+  case todayAmount = "amountConsumed"
+  case goal = "goal"
+}
+
 class DataManager {
 
   static let shared = DataManager()
@@ -23,11 +28,12 @@ class DataManager {
   }()
 
   func intakeGoal() -> Int {
-    return UserDefaults.standard.integer(forKey: "IntakeGoalKey")
+    return UserDefaults.standard.integer(forKey: DataKeys.goal.rawValue)
   }
 
   func setIntakeGoal(goal: Int) {
-    UserDefaults.standard.set(goal, forKey: "IntakeGoalKey")
+    UserDefaults.standard.set(goal, forKey: DataKeys.goal.rawValue)
+    todayIntake.goal = Int64(goal)
   }
 
   func addEntry(forDate date: Date) -> WaterIntake {
@@ -76,6 +82,12 @@ class DataManager {
     }
 
     return []
+  }
+
+  // Observation
+
+  func addObserver(observer: NSObject, forKey key: DataKeys) {
+    todayIntake.addObserver(observer, forKeyPath: key.rawValue, options: .new, context: nil)
   }
 
 }

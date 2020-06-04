@@ -43,6 +43,8 @@ class VisualizeGoalView: WaterLoggingWidgetView {
     updateButton.setTitleColor(.systemBlue, for: .normal)
     updateButton.addTarget(self, action: #selector(updateGoalAction), for: .touchUpInside)
     updateButton.translatesAutoresizingMaskIntoConstraints = false
+
+    DataManager.shared.addObserver(observer: self, forKey: DataKeys.goal)
   }
 
   override func setupConstraints() {
@@ -81,6 +83,21 @@ class VisualizeGoalView: WaterLoggingWidgetView {
 
   @objc func updateGoalAction() {
     delegate?.promptUpdateGoal()
+  }
+
+  // MARK: - Data Observation
+
+  override func observeValue(forKeyPath keyPath: String?,
+                             of object: Any?,
+                             change: [NSKeyValueChangeKey : Any]?,
+                             context: UnsafeMutableRawPointer?) {
+    if keyPath == DataKeys.goal.rawValue {
+      if let change = change {
+        if let new = change[NSKeyValueChangeKey.newKey] as? Int64 {
+          goalValueLabel.text = "\(new)"
+        }
+      }
+    }
   }
 
 }

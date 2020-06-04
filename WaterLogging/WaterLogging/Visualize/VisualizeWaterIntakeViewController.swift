@@ -24,11 +24,7 @@ class VisualizeWaterIntakeViewController: UIViewController, GoalDelegate {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
-    let currentIntake = DataManager.shared.todayIntake.amountConsumed
-    let currentGoal = DataManager.shared.intakeGoal()
-    let progress: Double = Double(currentIntake)/Double(currentGoal)
-
-    progressView.updateProgress(progress: progress, animated: true)
+    progressView.updateProgress(animated: true)
   }
 
   // Set Up

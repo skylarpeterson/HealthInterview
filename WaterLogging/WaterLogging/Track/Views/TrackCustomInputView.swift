@@ -36,7 +36,7 @@ class TrackCustomInputView: WaterLoggingWidgetView {
     ounceLabel.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
     ounceLabel.translatesAutoresizingMaskIntoConstraints = false
 
-    updateTotal()
+    updateTotal(amount: DataManager.shared.todayIntake.amountConsumed)
     totalLabel.font = UIFont.systemFont(ofSize: 17.0)
     totalLabel.textColor = .systemGray
     totalLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -45,6 +45,8 @@ class TrackCustomInputView: WaterLoggingWidgetView {
     addButton.setTitleColor(.systemBlue, for: .normal)
     addButton.addTarget(self, action: #selector(addButtonAction), for: .touchUpInside)
     addButton.translatesAutoresizingMaskIntoConstraints = false
+
+    DataManager.shared.addObserver(observer: self, forKey: DataKeys.todayAmount)
   }
 
   override func setupConstraints() {
@@ -67,7 +69,6 @@ class TrackCustomInputView: WaterLoggingWidgetView {
     entryContainer.topAnchor.constraint(equalTo: container.topAnchor, constant: 40.0).isActive = true
     entryContainer.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -40.0).isActive = true
     entryContainer.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
-    //entryContainer.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
     entryContainer.widthAnchor.constraint(lessThanOrEqualTo: container.widthAnchor, multiplier: 1.0).isActive = true
 
     amountTextField.topAnchor.constraint(equalTo: entryContainer.topAnchor).isActive = true
@@ -114,9 +115,9 @@ class TrackCustomInputView: WaterLoggingWidgetView {
     amountTextField.inputAccessoryView = doneToolbar
   }
 
-  // MARK: - Helpers
+  // MARK: - Private Helpers
 
-  func updateTotal() {
+  private func updateTotal(amount: Int64) {
     totalLabel.text = "Today's Total: \(DataManager.shared.todayIntake.amountConsumed) oz"
   }
 
@@ -135,6 +136,21 @@ class TrackCustomInputView: WaterLoggingWidgetView {
       }
     }
     amountTextField.text = nil
+  }
+
+  // MARK: - Data Observation
+
+  override func observeValue(forKeyPath keyPath: String?,
+                             of object: Any?,
+                             change: [NSKeyValueChangeKey : Any]?,
+                             context: UnsafeMutableRawPointer?) {
+    if keyPath == DataKeys.todayAmount.rawValue {
+      if let change = change {
+        if let new = change[NSKeyValueChangeKey.newKey] as? Int64 {
+          updateTotal(amount: new)
+        }
+      }
+    }
   }
 
 }

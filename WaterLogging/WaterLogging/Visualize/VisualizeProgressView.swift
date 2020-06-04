@@ -24,11 +24,14 @@ class VisualizeProgressView: WaterLoggingWidgetView {
     ringView.ringWidth = 40
     ringView.translatesAutoresizingMaskIntoConstraints = false
 
-    consumedLabel.text = consumedText()
+    updateConsumed()
     consumedLabel.textAlignment = .center
     consumedLabel.font = UIFont.systemFont(ofSize: 40.0, weight: .bold)
     consumedLabel.numberOfLines = 0
     consumedLabel.translatesAutoresizingMaskIntoConstraints = false
+
+    DataManager.shared.addObserver(observer: self, forKey: DataKeys.goal)
+    DataManager.shared.addObserver(observer: self, forKey: DataKeys.todayAmount)
   }
 
   override func setupConstraints() {
@@ -49,13 +52,19 @@ class VisualizeProgressView: WaterLoggingWidgetView {
     consumedLabel.heightAnchor.constraint(equalTo: ringView.heightAnchor, multiplier: 0.6).isActive = true
   }
 
-  // MARK: - Helpers
+  // MARK: - Private Helpers
 
-  func consumedText() -> String {
-    return "\(DataManager.shared.todayIntake.amountConsumed)/\(DataManager.shared.intakeGoal()) oz"
+  private func updateConsumed() {
+    consumedLabel.text = "\(DataManager.shared.todayIntake.amountConsumed)/\(DataManager.shared.intakeGoal()) oz"
   }
 
-  func updateProgress(progress: Double, animated: Bool) {
+  // MARK: - Publice Helpers
+
+  func updateProgress(animated: Bool) {
+    let currentIntake = DataManager.shared.todayIntake.amountConsumed
+    let currentGoal = DataManager.shared.intakeGoal()
+    let progress: Double = Double(currentIntake)/Double(currentGoal)
+
     if animated {
       UIView.animate(withDuration: 0.5) {
         self.ringView.progress = progress
@@ -63,7 +72,16 @@ class VisualizeProgressView: WaterLoggingWidgetView {
     } else {
       ringView.progress = progress
     }
-    self.consumedLabel.text = consumedText()
+  }
+
+  // MARK: - Data Observation
+
+  override func observeValue(forKeyPath keyPath: String?,
+                             of object: Any?,
+                             change: [NSKeyValueChangeKey : Any]?,
+                             context: UnsafeMutableRawPointer?) {
+    updateConsumed()
+    updateProgress(animated: true)
   }
 
 }
