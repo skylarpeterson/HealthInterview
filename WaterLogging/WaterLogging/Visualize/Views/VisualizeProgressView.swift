@@ -17,7 +17,12 @@ class VisualizeProgressView: WaterLoggingWidgetView {
   override func setup() {
     super.setup()
 
-    titleLabel.text = "Progress"
+    let formatter = DateFormatter()
+    formatter.dateStyle = .long
+    formatter.timeStyle = .none
+
+    let today = formatter.string(from: Date())
+    titleLabel.text = "Progress for \(today)"
 
     ringView.startColor = .systemBlue
     ringView.endColor = .systemBlue
@@ -40,8 +45,8 @@ class VisualizeProgressView: WaterLoggingWidgetView {
     widgetContainerView.addSubview(ringView)
     widgetContainerView.addSubview(consumedLabel)
 
-    ringView.topAnchor.constraint(equalTo: widgetContainerView.topAnchor, constant: 20.0).isActive = true
-    ringView.bottomAnchor.constraint(equalTo: widgetContainerView.bottomAnchor, constant: -20.0).isActive = true
+    ringView.topAnchor.constraint(equalTo: widgetContainerView.topAnchor, constant: mainViewPadding).isActive = true
+    ringView.bottomAnchor.constraint(equalTo: widgetContainerView.bottomAnchor, constant: -mainViewPadding).isActive = true
     ringView.centerXAnchor.constraint(equalTo: widgetContainerView.centerXAnchor).isActive = true
     ringView.widthAnchor.constraint(equalTo: widgetContainerView.widthAnchor, multiplier: 0.8).isActive = true
     ringView.heightAnchor.constraint(equalTo: widgetContainerView.widthAnchor, multiplier: 0.8).isActive = true

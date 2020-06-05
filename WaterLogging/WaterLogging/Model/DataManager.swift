@@ -19,6 +19,8 @@ class DataManager {
 
   static let shared = DataManager()
 
+  // MARK: - Today
+
   lazy var todayIntake: WaterIntake = {
     var intake = loadIntake(forDate: Date())
     if intake == nil {
@@ -27,6 +29,8 @@ class DataManager {
     return intake!
   }()
 
+  // MARK: - Goal
+
   func intakeGoal() -> Int {
     return UserDefaults.standard.integer(forKey: DataKeys.goal.rawValue)
   }
@@ -34,7 +38,14 @@ class DataManager {
   func setIntakeGoal(goal: Int) {
     UserDefaults.standard.set(goal, forKey: DataKeys.goal.rawValue)
     todayIntake.goal = Int64(goal)
+    do {
+      try todayIntake.managedObjectContext?.save()
+    } catch {
+      print("Error saving amount consumed change for \(todayIntake)")
+    }
   }
+
+  // MARK: - Helpers
 
   func addEntry(forDate date: Date) -> WaterIntake {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -84,7 +95,7 @@ class DataManager {
     return []
   }
 
-  // Observation
+  // MARK: - Observation
 
   func addObserver(observer: NSObject, forKey key: DataKeys) {
     todayIntake.addObserver(observer, forKeyPath: key.rawValue, options: .new, context: nil)

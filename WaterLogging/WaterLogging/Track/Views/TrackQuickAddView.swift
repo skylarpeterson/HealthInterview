@@ -11,9 +11,9 @@ import UIKit
 class TrackQuickAddView: WaterLoggingWidgetView {
 
   private let stackView: UIStackView
-  private let fourOzButton = VerticalButton(padding: 8.0)
-  private let eightOzButton = VerticalButton(padding: 8.0)
-  private let sixteenOzButton = VerticalButton(padding: 8.0)
+  private let fourOzButton = VerticalButton(padding: itemPadding)
+  private let eightOzButton = VerticalButton(padding: itemPadding)
+  private let sixteenOzButton = VerticalButton(padding: itemPadding)
 
   var delegate: TrackDelegate?
 
@@ -59,7 +59,6 @@ class TrackQuickAddView: WaterLoggingWidgetView {
     stackView.leadingAnchor.constraint(equalTo: widgetContainerView.leadingAnchor).isActive = true
     stackView.trailingAnchor.constraint(equalTo: widgetContainerView.trailingAnchor).isActive = true
     stackView.bottomAnchor.constraint(equalTo: widgetContainerView.bottomAnchor).isActive = true
-    stackView.heightAnchor.constraint(greaterThanOrEqualToConstant: 70.0).isActive = true
   }
 
   // MARK: - Button Actions

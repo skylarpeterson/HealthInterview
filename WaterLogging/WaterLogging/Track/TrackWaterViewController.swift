@@ -38,11 +38,11 @@ class TrackWaterViewController: UIViewController, TrackDelegate {
   }
 
   private func setUpConstraints() {
-    customInputView.topAnchor.constraint(equalTo: view.readableContentGuide.topAnchor, constant: 20.0).isActive = true
+    customInputView.topAnchor.constraint(equalTo: view.readableContentGuide.topAnchor, constant: mainViewPadding).isActive = true
     customInputView.leadingAnchor.constraint(equalTo: view.readableContentGuide.leadingAnchor).isActive = true
     customInputView.trailingAnchor.constraint(equalTo: view.readableContentGuide.trailingAnchor).isActive = true
 
-    quickAddView.topAnchor.constraint(equalTo: customInputView.bottomAnchor, constant: 20.0).isActive = true
+    quickAddView.topAnchor.constraint(equalTo: customInputView.bottomAnchor, constant: mainViewPadding).isActive = true
     quickAddView.leadingAnchor.constraint(equalTo: customInputView.leadingAnchor).isActive = true
     quickAddView.trailingAnchor.constraint(equalTo: customInputView.trailingAnchor).isActive = true
   }

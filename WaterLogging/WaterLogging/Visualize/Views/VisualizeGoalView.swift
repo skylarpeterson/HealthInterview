@@ -23,12 +23,6 @@ class VisualizeGoalView: WaterLoggingWidgetView {
   override func setup() {
     super.setup()
 
-    let formatter = DateFormatter()
-    formatter.dateStyle = .long
-    formatter.timeStyle = .none
-
-    //let today = formatter.string(from: Date())
-
     goalLabel.text = "Daily Goal"
     goalLabel.font = UIFont.systemFont(ofSize: 20.0, weight: .medium)
     goalLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
@@ -55,11 +49,11 @@ class VisualizeGoalView: WaterLoggingWidgetView {
     widgetContainerView.addSubview(goalLabel)
     widgetContainerView.addSubview(goalValueLabel)
 
-    goalLabel.topAnchor.constraint(equalTo: widgetContainerView.topAnchor, constant: 20.0).isActive = true
-    goalLabel.leadingAnchor.constraint(equalTo: widgetContainerView.leadingAnchor, constant: 15.0).isActive = true
+    goalLabel.topAnchor.constraint(equalTo: widgetContainerView.topAnchor, constant: mainViewPadding).isActive = true
+    goalLabel.leadingAnchor.constraint(equalTo: widgetContainerView.leadingAnchor, constant: visualizeGoalHorizontalPadding).isActive = true
 
     goalValueLabel.firstBaselineAnchor.constraint(equalTo: goalLabel.firstBaselineAnchor).isActive = true
-    goalValueLabel.trailingAnchor.constraint(equalTo: widgetContainerView.trailingAnchor, constant: -15.0).isActive = true
+    goalValueLabel.trailingAnchor.constraint(equalTo: widgetContainerView.trailingAnchor, constant: -visualizeGoalHorizontalPadding).isActive = true
 
     // Line and Button
 
@@ -69,14 +63,14 @@ class VisualizeGoalView: WaterLoggingWidgetView {
     widgetContainerView.addSubview(lineView)
     widgetContainerView.addSubview(updateButton)
 
-    lineView.topAnchor.constraint(equalTo: goalLabel.bottomAnchor, constant: 20.0).isActive = true
-    lineView.leadingAnchor.constraint(equalTo: widgetContainerView.leadingAnchor, constant: 15.0).isActive = true
-    lineView.trailingAnchor.constraint(equalTo: widgetContainerView.trailingAnchor, constant: -15.0).isActive = true
-    lineView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
+    lineView.topAnchor.constraint(equalTo: goalLabel.bottomAnchor, constant: mainViewPadding).isActive = true
+    lineView.leadingAnchor.constraint(equalTo: widgetContainerView.leadingAnchor, constant: visualizeGoalHorizontalPadding).isActive = true
+    lineView.trailingAnchor.constraint(equalTo: widgetContainerView.trailingAnchor, constant: -visualizeGoalHorizontalPadding).isActive = true
+    lineView.heightAnchor.constraint(equalToConstant: lineHeight).isActive = true
 
-    updateButton.topAnchor.constraint(equalTo: lineView.bottomAnchor, constant: 10.0).isActive = true
+    updateButton.topAnchor.constraint(equalTo: lineView.bottomAnchor, constant: itemPadding).isActive = true
     updateButton.centerXAnchor.constraint(equalTo: widgetContainerView.centerXAnchor).isActive = true
-    updateButton.bottomAnchor.constraint(equalTo: widgetContainerView.bottomAnchor, constant: -10.0).isActive = true
+    updateButton.bottomAnchor.constraint(equalTo: widgetContainerView.bottomAnchor, constant: -itemPadding).isActive = true
   }
 
   // MARK: - Button Actions

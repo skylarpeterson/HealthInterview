@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5342C30B24873EBF00111D82 /* VisualizeGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342C30A24873EBF00111D82 /* VisualizeGoalView.swift */; };
 		5342C30D248744B600111D82 /* VisualizeProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342C30C248744B600111D82 /* VisualizeProgressView.swift */; };
+		5342C3122489C04500111D82 /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342C3112489C04500111D82 /* LayoutConstants.swift */; };
 		5395E0A72485C1F20074A4CB /* TrackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395E0A62485C1F20074A4CB /* TrackDelegate.swift */; };
 		5395E0AD2485CB330074A4CB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395E0AC2485CB330074A4CB /* DataManager.swift */; };
 		53B5146E2485FE5C00A86BAE /* WaterIntake+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5146C2485FE5C00A86BAE /* WaterIntake+CoreDataClass.swift */; };
@@ -47,6 +48,7 @@
 		5129D42844EA6AF4E1661E32 /* Pods-WaterLoggingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterLoggingTests.release.xcconfig"; path = "Target Support Files/Pods-WaterLoggingTests/Pods-WaterLoggingTests.release.xcconfig"; sourceTree = "<group>"; };
 		5342C30A24873EBF00111D82 /* VisualizeGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizeGoalView.swift; sourceTree = "<group>"; };
 		5342C30C248744B600111D82 /* VisualizeProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizeProgressView.swift; sourceTree = "<group>"; };
+		5342C3112489C04500111D82 /* LayoutConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
 		5395E0A62485C1F20074A4CB /* TrackDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDelegate.swift; sourceTree = "<group>"; };
 		5395E0AC2485CB330074A4CB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		53B5146C2485FE5C00A86BAE /* WaterIntake+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterIntake+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -125,6 +127,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		5342C3102489C00100111D82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5342C30A24873EBF00111D82 /* VisualizeGoalView.swift */,
+				5342C30C248744B600111D82 /* VisualizeProgressView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5395E0A82485C82E0074A4CB /* Track */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,8 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				B31AA1EE24734EE8007708F4 /* VisualizeWaterIntakeViewController.swift */,
-				5342C30A24873EBF00111D82 /* VisualizeGoalView.swift */,
-				5342C30C248744B600111D82 /* VisualizeProgressView.swift */,
+				5342C3102489C00100111D82 /* Views */,
 			);
 			path = Visualize;
 			sourceTree = "<group>";
@@ -192,11 +202,12 @@
 				5395E0A92485C8460074A4CB /* Custom Views */,
 				B31AA1D824734EAB007708F4 /* Info.plist */,
 				B31AA1D524734EAB007708F4 /* LaunchScreen.storyboard */,
+				5342C3112489C04500111D82 /* LayoutConstants.swift */,
 				B31AA1CD24734EAB007708F4 /* Main.storyboard */,
+				533B1BE52485FD89003EF235 /* Model */,
 				B31AA1C924734EAB007708F4 /* SceneDelegate.swift */,
 				5395E0A82485C82E0074A4CB /* Track */,
 				5395E0AA2485C86F0074A4CB /* Visualize */,
-				533B1BE52485FD89003EF235 /* Model */,
 			);
 			path = WaterLogging;
 			sourceTree = "<group>";
@@ -379,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53C4866824858FFD00D22524 /* TrackCustomInputView.swift in Sources */,
+				5342C3122489C04500111D82 /* LayoutConstants.swift in Sources */,
 				5395E0AD2485CB330074A4CB /* DataManager.swift in Sources */,
 				5342C30D248744B600111D82 /* VisualizeProgressView.swift in Sources */,
 				5342C30B24873EBF00111D82 /* VisualizeGoalView.swift in Sources */,

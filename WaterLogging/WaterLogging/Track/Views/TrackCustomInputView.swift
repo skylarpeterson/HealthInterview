@@ -66,8 +66,8 @@ class TrackCustomInputView: WaterLoggingWidgetView {
     container.leadingAnchor.constraint(equalTo: widgetContainerView.leadingAnchor).isActive = true
     container.trailingAnchor.constraint(equalTo: widgetContainerView.trailingAnchor).isActive = true
 
-    entryContainer.topAnchor.constraint(equalTo: container.topAnchor, constant: 40.0).isActive = true
-    entryContainer.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -40.0).isActive = true
+    entryContainer.topAnchor.constraint(equalTo: container.topAnchor, constant: trackCustomVerticalPadding).isActive = true
+    entryContainer.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -trackCustomVerticalPadding).isActive = true
     entryContainer.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
     entryContainer.widthAnchor.constraint(lessThanOrEqualTo: container.widthAnchor, multiplier: 1.0).isActive = true
 
@@ -76,7 +76,7 @@ class TrackCustomInputView: WaterLoggingWidgetView {
     amountTextField.bottomAnchor.constraint(equalTo: entryContainer.bottomAnchor).isActive = true
 
     ounceLabel.firstBaselineAnchor.constraint(equalTo: amountTextField.firstBaselineAnchor).isActive = true
-    ounceLabel.leadingAnchor.constraint(equalTo: amountTextField.trailingAnchor, constant: 5.0).isActive = true
+    ounceLabel.leadingAnchor.constraint(equalTo: amountTextField.trailingAnchor, constant: itemPadding).isActive = true
     ounceLabel.trailingAnchor.constraint(equalTo: entryContainer.trailingAnchor).isActive = true
 
     widgetContainerView.addSubview(totalLabel)
@@ -89,19 +89,25 @@ class TrackCustomInputView: WaterLoggingWidgetView {
     widgetContainerView.addSubview(lineView)
     widgetContainerView.addSubview(addButton)
 
-    lineView.topAnchor.constraint(equalTo: totalLabel.bottomAnchor, constant: 10.0).isActive = true
-    lineView.leadingAnchor.constraint(equalTo: widgetContainerView.leadingAnchor, constant: 10.0).isActive = true
-    lineView.trailingAnchor.constraint(equalTo: widgetContainerView.trailingAnchor, constant: -10.0).isActive = true
-    lineView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
+    lineView.topAnchor.constraint(equalTo: totalLabel.bottomAnchor, constant: itemPadding).isActive = true
+    lineView.leadingAnchor.constraint(equalTo: widgetContainerView.leadingAnchor, constant: itemPadding).isActive = true
+    lineView.trailingAnchor.constraint(equalTo: widgetContainerView.trailingAnchor, constant: -itemPadding).isActive = true
+    lineView.heightAnchor.constraint(equalToConstant: lineHeight).isActive = true
 
-    addButton.topAnchor.constraint(equalTo: lineView.bottomAnchor, constant: 10.0).isActive = true
+    addButton.topAnchor.constraint(equalTo: lineView.bottomAnchor, constant: itemPadding).isActive = true
     addButton.centerXAnchor.constraint(equalTo: widgetContainerView.centerXAnchor).isActive = true
-    addButton.bottomAnchor.constraint(equalTo: widgetContainerView.bottomAnchor, constant: -10.0).isActive = true
+    addButton.bottomAnchor.constraint(equalTo: widgetContainerView.bottomAnchor, constant: -itemPadding).isActive = true
+  }
+
+  // MARK: - Private Helpers
+
+  private func updateTotal(amount: Int64) {
+    totalLabel.text = "Today's Total: \(DataManager.shared.todayIntake.amountConsumed) oz"
   }
 
   // Done Button Source: https://stackoverflow.com/questions/28338981/how-to-add-done-button-to-numpad-in-ios-using-swift
 
-  func addDoneButtonOnKeyboard(){
+  private func addDoneButtonOnKeyboard(){
     let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
     doneToolbar.barStyle = .default
 
@@ -113,12 +119,6 @@ class TrackCustomInputView: WaterLoggingWidgetView {
     doneToolbar.sizeToFit()
 
     amountTextField.inputAccessoryView = doneToolbar
-  }
-
-  // MARK: - Private Helpers
-
-  private func updateTotal(amount: Int64) {
-    totalLabel.text = "Today's Total: \(DataManager.shared.todayIntake.amountConsumed) oz"
   }
 
   // MARK: - Button Actions

@@ -43,7 +43,7 @@ class WaterLoggingWidgetView: UIView {
     titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
     titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
 
-    widgetContainerView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8.0).isActive = true
+    widgetContainerView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: itemPadding).isActive = true
     widgetContainerView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
     widgetContainerView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     widgetContainerView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true

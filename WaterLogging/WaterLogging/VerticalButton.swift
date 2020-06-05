@@ -10,7 +10,7 @@ import UIKit
 
 class VerticalButton: UIButton {
 
-  var padding: CGFloat = 6.0
+  var padding: CGFloat = 0.0
 
   let verticalTitleLabel = UILabel()
   let verticalImageView = UIImageView()
