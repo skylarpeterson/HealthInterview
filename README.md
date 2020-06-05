@@ -1,5 +1,11 @@
 # HealthInterviewTakeHomeProblem
 
+## Running the App
+
+This app does take advantage of one pod from CocoaPods, so if you don't have CocoaPods installed, you may need to do so, which you can follow instructions for here: https://cocoapods.org
+
+The podfile is set up correctly already.
+
 ## Architecture
 
 ### General
