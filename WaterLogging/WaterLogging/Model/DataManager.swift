@@ -32,6 +32,12 @@ class DataManager {
   // MARK: - Goal
 
   func intakeGoal() -> Int {
+    // If this is our first time opening the app, set the default goal to be 80 oz
+    if !UserDefaults.standard.bool(forKey: "FirstOpenCompleted") {
+      setIntakeGoal(goal: 80)
+      UserDefaults.standard.set(true, forKey: "FirstOpenCompleted")
+      return 80
+    }
     return UserDefaults.standard.integer(forKey: DataKeys.goal.rawValue)
   }
 
